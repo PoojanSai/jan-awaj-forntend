@@ -127,7 +127,7 @@ function submitText(){
     addMessage(text, "user");
     addMessage("📨 Submitting complaint...", "bot");
 
-    fetch("http://127.0.0.1:8000/complaint", {
+    fetch("https://jan-awaj.onrender.com/complaint", {
       method:"POST",
       body: fd
     })
@@ -186,7 +186,7 @@ function sendAudio(audio,lat,lon){
 
   addMessage("📨 Submitting complaint...", "bot");
 
-  fetch("http://127.0.0.1:8000/complaint",{
+  fetch("https://jan-awaj.onrender.com/complaint",{
     method:"POST",
     body:fd
   })
@@ -202,3 +202,4 @@ function sendAudio(audio,lat,lon){
 
 </body>
 </html>
+
